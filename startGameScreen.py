@@ -1,6 +1,7 @@
 import pygame  # Importa a biblioteca Pygame para criação do jogo
 import sys     # Importa o módulo sys para poder encerrar o programa
 from firstScreen import firstScreen  # Importa a função da primeira fase do jogo
+from secondScreen import secondScreen  # Importa a função da primeira fase do jogo
 
 # Inicializa todos os módulos do Pygame
 pygame.init()
@@ -35,7 +36,7 @@ while True:
             sys.exit()     # Encerra o programa
         elif evento.type == pygame.KEYDOWN:  # Se alguma tecla for pressionada
             if evento.key == pygame.K_RETURN:  # Se a tecla pressionada for ENTER
-                firstScreen(tela, fonte)  # Chama a função que inicia a primeira fase do jogo
+                secondScreen(tela, fonte)  # Chama a função que inicia a primeira fase do jogo
 
     tela_inicio()  # Exibe a tela inicial a cada frame
     pygame.display.flip()  # Atualiza o conteúdo da janela com o que foi desenhado

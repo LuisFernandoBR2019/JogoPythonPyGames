@@ -33,7 +33,7 @@ def firstScreen(tela, fonte):
     def criar_monstros():
         return [
             {
-                "rect": pygame.Rect(625, 520, 45, 45),
+                "rect": pygame.Rect(625, 520, 45, 45), #Posições dos montros
                 "image": MONSTRO1,
                 "pergunta": "Qual a capital da França?",
                 "opcoes": ["Londres", "Paris", "Roma", "Berlim"],
@@ -54,7 +54,7 @@ def firstScreen(tela, fonte):
                 "pergunta": "Qual o maior planeta do sistema solar?",
                 "opcoes": ["Terra", "Marte", "Júpiter", "Saturno"],
                 "resposta_certa": "Júpiter",
-                "answered": False
+                "answered": False #Já foi respondida
             },
             {
                 "rect": pygame.Rect(600, 150, 50, 50),
